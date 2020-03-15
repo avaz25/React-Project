@@ -19,6 +19,7 @@ class Bootcamp {
     }
     registerStudent(studentToRegister) {
         if (this.students.filter(duplicate => duplicate.email === studentToRegister.email).length) {
+//      if (this.students.includes(studentToRegister)) {
             console.log(`The email address ${studentToRegister.email} is already registered.`);
         } else {
             this.students.push(studentToRegister);
